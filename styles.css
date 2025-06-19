@@ -215,10 +215,7 @@ body {
   flex-wrap: wrap;
 }
 
-
 /* FAQ BOX */
-
-
 .faq-box {
   background: white;
   border: 1px solid #e0e0e0;
@@ -226,6 +223,8 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
   width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .faq-box h2 {
@@ -234,11 +233,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
 .accordion-item {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -254,15 +248,35 @@ body {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  outline: none;
 }
 
 .accordion-header:hover {
   color: #0056b3;
 }
 
-.arrow {
-  font-size: 0.9rem;
+
+.accordion-item.open .accordion-content {
+  /* max-height is set dynamically by JS */
 }
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-box {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 10px;
+  }
+}
+
 
 /* SUPPORT BOX */
 .support-box {
