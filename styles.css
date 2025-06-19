@@ -215,7 +215,10 @@ body {
   flex-wrap: wrap;
 }
 
+
 /* FAQ BOX */
+
+
 .faq-box {
   background: white;
   border: 1px solid #e0e0e0;
@@ -223,8 +226,6 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
   width: 700px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .faq-box h2 {
@@ -233,6 +234,19 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.accordion-content {
+   cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: revert;
+    transition: background 0.3s;
+    text-align: left;
+    display: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+.accordion-content.open {
+  max-height: 1000px; /* large enough to fit content */
+}
 .accordion-item {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -248,35 +262,16 @@ body {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  outline: none;
+   transition: background 0.3s;
 }
 
 .accordion-header:hover {
   color: #0056b3;
 }
 
-
-.accordion-item.open .accordion-content {
-  /* max-height is set dynamically by JS */
-}
-
 .arrow {
-  transition: transform 0.3s ease;
+  font-size: 0.9rem;
 }
-
-.rotate {
-  transform: rotate(180deg);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .faq-box {
-    width: 100%;
-    padding: 1rem;
-    margin: 0 10px;
-  }
-}
-
 
 /* SUPPORT BOX */
 .support-box {
@@ -445,8 +440,3 @@ body {
   }
 }
 
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}

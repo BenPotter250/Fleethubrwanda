@@ -35,7 +35,7 @@
     <button class="book-button">Book Now</button>
   </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://capitaldiaspora.partnerapp.renthubsoftware.com/#/home">
-    <button class="book-button" style="color: green; background-color: greenyellow;">Partner APP</button>
+    <button class="book-button" style="color: white; background-color: blue;">Partner APP</button>
   </a>
 </div>
 
@@ -319,26 +319,15 @@
 </footer>   
 
 <script>
-  // Select all accordion headers
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-  accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-      // Find the next sibling element (the content div)
-      const content = header.nextElementSibling;
-
-      // Toggle the "active" class on the header
-      header.classList.toggle('active');
-
-      // Toggle visibility
-      if (content.style.display === 'block') {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'block';
-      }
+    document.querySelectorAll('.accordion-header').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isVisible = answer.style.display === 'block';
+        answer.style.display = isVisible ? 'none' : 'block';
+        
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
