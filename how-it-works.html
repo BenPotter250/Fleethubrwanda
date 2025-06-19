@@ -5,34 +5,97 @@
   <meta charset="UTF-8">
   <title>How It Works - FleetHub Rwanda</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 20px;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    a.back-link {
-      display: inline-block;
+
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #0A3D62;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
       margin-bottom: 20px;
-      color: #0af;
+      padding: 15px;
+      background-color: #eef4fa;
+      border-left: 5px solid #0A3D62;
+      border-radius: 6px;
+    }
+
+    ul li strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+      color: #0A3D62;
+    }
+
+    a.back-link {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      color: #0A3D62;
       text-decoration: none;
       font-weight: bold;
     }
+
     a.back-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h2>How It Works</h2>
-  <p>Joining Fleethub Rwanda is easy and rewarding. We help you get more bookings, streamline operations, and grow your business—all from one powerful platform.</p>
-  <ul>
-    <li><strong>Register Your Company:</strong> Create an account by providing your company details and fleet information. Our team will verify your profile to ensure trust and professionalism.</li>
-    <li><strong>List Your Vehicles:</strong> Add vehicle details including model, rates, photos, and terms.</li>
-    <li><strong>Get Bookings in Real Time:</strong> Customers can book your vehicles instantly online.</li>
-    <li><strong>Grow with Us:</strong> Access marketing support, nationwide exposure, and new opportunities.</li>
-  </ul>
-  <a href="index.html">&larr; Back to Info</a>
+  <div class="container">
+    <h2>How It Works</h2>
+    <p>Joining Fleethub Rwanda is easy and rewarding. We help you get more bookings, streamline operations, and grow your business—all from one powerful platform.</p>
+    <ul>
+      <li>
+        <strong>Register Your Company:</strong>
+        Create an account by providing your company details and fleet information. Our team will verify your profile to ensure trust and professionalism.
+      </li>
+      <li>
+        <strong>List Your Vehicles:</strong>
+        Add vehicle details including model, rates, photos, and terms.
+      </li>
+      <li>
+        <strong>Get Bookings in Real Time:</strong>
+        Customers can book your vehicles instantly online.
+      </li>
+      <li>
+        <strong>Grow with Us:</strong>
+        Access marketing support, nationwide exposure, and new opportunities.
+      </li>
+    </ul>
+    <a href="index.html" class="back-link">&larr; Back to Info</a>
+  </div>
 </body>
 </html>
