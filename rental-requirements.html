@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rental Requirements - FleetHub Rwanda</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
   <style>
-    .page-content {
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 20px;
+    body {
       font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .nav-bar {
+      background-color: #112339;
+      height: 60px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .page-content {
+      padding: 0 20px;
     }
 
     a.back-link {
       display: inline-block;
       margin-top: 20px;
-      color: #0af;
+      color: #0A3D62;
       text-decoration: none;
       font-weight: bold;
     }
@@ -27,9 +39,90 @@
     a.back-link:hover {
       text-decoration: underline;
     }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer.footer {
+      max-width: 1000px;
+      margin: 40px auto 20px;
+      padding: 20px;
+      background-color: #112339;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .footer-columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1 1 30%;
+      margin: 10px;
+    }
+
+    .column h4 {
+      margin-bottom: 12px;
+    }
+
+    .column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .column ul li {
+      margin-bottom: 8px;
+    }
+
+    .column a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      border-top: 1px solid #3a3a3a;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .footer-social a {
+      color: white;
+      margin-left: 12px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      color: #0A3D62;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Band (empty, styled) -->
+  <div class="nav-bar"></div>
 
   <!-- Page Content -->
   <div class="page-content">
@@ -46,41 +139,7 @@
     <a href="index.html" class="back-link">&larr; Back to Info</a>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-columns">
-        <div class="column">
-          <h4>About Us</h4>
-          <ul>
-            <li><a href="company-overview.html">Company Overview</a></li>
-            <li><a href="our-mission.html">Our Mission</a></li>
-            <li><a href="our-vision.html">Our Vision</a></li>
-            <li><a href="why-choose-us.html">Why Choose Us</a></li>
-          </ul>
-        </div>
-
-        <div class="column">
-          <h4>Info</h4>
-          <ul>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="rental-requirements.html">Rental Requirements</a></li>
-            <li><a href="rental-policies.html">Rental Policies</a></li>
-            <li><a href="operating-hours.html">Operating Hours</a></li>
-          </ul>
-        </div>
-
-        <div class="column">
-          <h4>Contact Us</h4>
-          <p>Hotline: <strong>6800</strong></p>
-          <p>Tel: <strong>0798976478</strong></p>
-          <p style="color: white;">
-            Email: <a href="mailto:info@fleethubrwanda.com" style="color: white; text-decoration: none;">info@fleethubrwanda.com</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
+       <div class="footer-bottom">
         <p>&copy; 2025 FleetHub Rwanda. All Rights Reserved.</p>
         <div class="footer-social">
           <a href="https://x.com/fleethubrwanda" target="_blank" aria-label="Twitter">
