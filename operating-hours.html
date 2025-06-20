@@ -1,39 +1,75 @@
-<!-- operating-hours.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Operating Hours - FleetHub Rwanda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       font-family: Arial, sans-serif;
       max-width: 800px;
-      margin: 40px auto;
+      margin: 0 auto;
+      padding: 0 20px 40px;
       line-height: 1.6;
-      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
-    a.back-link {
-      display: inline-block;
+
+    .nav-bar {
+      background-color: #112339;
+      height: 60px;
+      width: 100%;
+    }
+
+    h2 {
+      color: #0A3D62;
+      margin-top: 20px;
       margin-bottom: 20px;
-      color: #0af;
-      text-decoration: none;
-      font-weight: bold;
+      text-align: center;
     }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    li {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    a.back-link {
+      display: block;
+      text-align: center;
+      color: #0A3D62;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
     a.back-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Band (empty but visible) -->
+  <div class="nav-bar"></div>
+
   <h2>Operating Hours</h2>
-  <p>
-    <ul>
-      <li><strong>Platform Access:</strong> 24/7 online booking & browsing</li>
-      <li><strong>Call Center:</strong> 24/7 customer support</li>
-      <li><strong>Office Hours:</strong> Mon–Sat 8:00 AM – 5:00 PM</li>
-      <li><strong>Pickup/Drop-off:</strong> 7:00 AM – 8:00 PM (after-hours available)</li>
-    </ul>
-  </p>
-  <a href="index.html">&larr; Back to Info</a>
+  <ul>
+    <li><strong>Platform Access:</strong> 24/7 online booking & browsing</li>
+    <li><strong>Call Center:</strong> 24/7 customer support</li>
+    <li><strong>Office Hours:</strong> Mon–Sat 8:00 AM – 5:00 PM</li>
+    <li><strong>Pickup/Drop-off:</strong> 7:00 AM – 8:00 PM (after-hours available)</li>
+  </ul>
+
+  <a href="index.html" class="back-link">&larr; Back to Info</a>
+
 </body>
 </html>

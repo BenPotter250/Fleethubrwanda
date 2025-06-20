@@ -1,33 +1,40 @@
-<!-- rental-requirements.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Rental Requirements - FleetHub Rwanda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    .page-content {
       max-width: 800px;
       margin: 40px auto;
       line-height: 1.6;
       padding: 0 20px;
+      font-family: Arial, sans-serif;
     }
+
     a.back-link {
       display: inline-block;
-      margin-bottom: 20px;
+      margin-top: 20px;
       color: #0af;
       text-decoration: none;
       font-weight: bold;
     }
+
     a.back-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h2>Rental Requirements</h2>
-  <p>
-    To become a verified rental partner, your company must meet the following:
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <h2>Rental Requirements</h2>
+    <p>To become a verified rental partner, your company must meet the following:</p>
     <ul>
       <li>Valid RDB business registration certificate.</li>
       <li>Valid RURA license for car rental services.</li>
@@ -36,7 +43,62 @@
       <li>National ID or passport of the company representative.</li>
       <li>Signed FleetHub Partner Agreement.</li>
     </ul>
-  </p>
-  <a href="index.html">&larr; Back to Info</a>
+    <a href="index.html" class="back-link">&larr; Back to Info</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+        <div class="column">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="company-overview.html">Company Overview</a></li>
+            <li><a href="our-mission.html">Our Mission</a></li>
+            <li><a href="our-vision.html">Our Vision</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="rental-requirements.html">Rental Requirements</a></li>
+            <li><a href="rental-policies.html">Rental Policies</a></li>
+            <li><a href="operating-hours.html">Operating Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h4>Contact Us</h4>
+          <p>Hotline: <strong>6800</strong></p>
+          <p>Tel: <strong>0798976478</strong></p>
+          <p style="color: white;">
+            Email: <a href="mailto:info@fleethubrwanda.com" style="color: white; text-decoration: none;">info@fleethubrwanda.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FleetHub Rwanda. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://x.com/fleethubrwanda" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com/FleetHubRwanda" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/fleethubrwanda?igsh=MW8yOHNqdGd0ZnNqNA==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fleethub-rwanda-421897368/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

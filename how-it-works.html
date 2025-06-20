@@ -1,22 +1,12 @@
-<!-- how-it-works.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How It Works - FleetHub Rwanda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f8fb;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
     .container {
       max-width: 800px;
       margin: 60px auto;
@@ -26,25 +16,25 @@
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     }
 
-    h2 {
+    .container h2 {
       text-align: center;
       font-size: 28px;
       margin-bottom: 30px;
       color: #0A3D62;
     }
 
-    p {
+    .container p {
       font-size: 16px;
       text-align: center;
       margin-bottom: 30px;
     }
 
-    ul {
+    .container ul {
       list-style: none;
       padding: 0;
     }
 
-    ul li {
+    .container ul li {
       margin-bottom: 20px;
       padding: 15px;
       background-color: #eef4fa;
@@ -52,14 +42,14 @@
       border-radius: 6px;
     }
 
-    ul li strong {
+    .container ul li strong {
       display: block;
       margin-bottom: 8px;
       font-size: 16px;
       color: #0A3D62;
     }
 
-    a.back-link {
+    .container a.back-link {
       display: block;
       margin-top: 30px;
       text-align: center;
@@ -68,12 +58,22 @@
       font-weight: bold;
     }
 
-    a.back-link:hover {
+    .container a.back-link:hover {
       text-decoration: underline;
+    }
+
+    .nav-bar {
+      background-color: #112339;
+      height: 60px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Navigation Band (Empty but visible) -->
+  <div class="nav-bar"></div>
+
+  <!-- Main Content Section -->
   <div class="container">
     <h2>How It Works</h2>
     <p>Joining Fleethub Rwanda is easy and rewarding. We help you get more bookings, streamline operations, and grow your business—all from one powerful platform.</p>
@@ -97,5 +97,61 @@
     </ul>
     <a href="index.html" class="back-link">&larr; Back to Info</a>
   </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+
+        <div class="column">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="company-overview.html">Company Overview</a></li>
+            <li><a href="our-mission.html">Our Mission</a></li>
+            <li><a href="our-vision.html">Our Vision</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="rental-requirements.html">Rental Requirements</a></li>
+            <li><a href="rental-policies.html">Rental Policies</a></li>
+            <li><a href="operating-hours.html">Operating Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h4>Contact Us</h4>
+          <p>Hotline: <strong>6800</strong></p>
+          <p>Tel: <strong>0798976478</strong></p>
+          <p style="color: white;">
+            Email: <a href="mailto:info@fleethubrwanda.com" style="color: white; text-decoration: none;">info@fleethubrwanda.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FleetHub Rwanda. All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="https://x.com/fleethubrwanda" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com/FleetHubRwanda" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/fleethubrwanda?igsh=MW8yOHNqdGd0ZnNqNA==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fleethub-rwanda-421897368/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
